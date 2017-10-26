@@ -109,19 +109,20 @@ export default class App extends Component {
 	}
 
 	renderStory(story) {
+		// Assign unique key for each story
+		const getRandom = Math.random();
 		return (
-			<div>
+			<div key={`${getRandom}`}>
 				<Story storyData={story} />
 			</div>
 		);
 	}
 
 	render() {
-		const getRandom = Math.random();
 		return (
 			<div>
 				<h1>Hacker News</h1>
-				<div key={`${getRandom}`}>
+				<div>
 					{this.state.tenStories.map(story => this.renderStory(story))}
 				</div>
 			</div>
