@@ -9,7 +9,13 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.14"
+    "chai": "^4.1.2",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1",
+    "react-scripts": "1.0.14",
+    "react-test-renderer": "^16.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
